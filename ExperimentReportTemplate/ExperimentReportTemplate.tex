@@ -1,0 +1,48 @@
+% !TEX program = pdflatex
+% 实验报告模板
+\documentclass[UTF8,10pt,a4paper]{article}
+\usepackage{ctex}
+% \catcode`\。=\active
+% \newcommand{。}{．}
+\newcommand{\CourseName}{近代物理实验}
+\newcommand{\CourseCode}{PHYS1701}
+\newcommand{\Semester}{2019-2020学年第学期}
+\newcommand{\ProjectName}{实验报告}
+\newcommand{\TimeType}{实验日期}
+\newcommand{\Time}{2020. . （周三）}
+\newcommand{\StudentName}{陈稼霖}
+\newcommand{\StudentID}{45875852}
+\usepackage[vmargin=1in,hmargin=.5in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{calc}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\CourseName}
+\fancyhead[C]{\ProjectName}
+\fancyhead[R]{\StudentName}
+\fancyfoot[R]{\thepage\ / \pageref{LastPage}}
+\setlength\headheight{12pt}
+\fancypagestyle{FirstPageStyle}{
+    \fancyhf{}
+    \fancyhead[L]{\CourseName\\
+        \CourseCode\\
+        \Semester}
+    \fancyhead[C]{{\huge\bfseries\ProjectName}\\
+        \TimeType\ : \Time}
+    \fancyhead[R]{姓名 : \makebox[\widthof{\StudentID}][s]{\StudentName}\\
+        学号 : \StudentID\\
+        成绩 : \underline{\makebox[\widthof{\StudentID}]{}}}
+    \fancyfoot[R]{\thepage\ / \pageref{LastPage}}
+    \setlength\headheight{36pt}
+}
+\usepackage{amsmath,amssymb,amsthm,bm}
+\allowdisplaybreaks[4]
+% \usepackage{multirow}
+% \usepackage{graphicx}
+% \usepackage{subfigure}
+\begin{document}
+\thispagestyle{FirstPageStyle}
+\section{}
+
+\end{document}
